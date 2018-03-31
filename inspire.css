@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'FontAwesome2';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+    url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome2 !important;
+    font-style: normal;
+    font-weight: thin;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,52 +25,283 @@
 }
 html,body{
     height: 100%;
+    min-width: 1300px;
 }
-body{
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -moz-box-orient:vertical;
-    -webkit-box-orient:vertical;
-    box-orient:vertical;
+.container{
     width: 100%;
-
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
 }
-#header{
-    width: 100%;
-    padding: 10px;
-    background-color: #222222;
+.left{
+    width: 200px;
+    height: 100%;
+    background-color: #2a3949;
+    position: absolute;
     color: #ffffff;
 }
-#footer{
-    width: 100%;
-    padding: 10px;
-    background-color: #ffffff;
+.main{
+    margin-left: 200px;
+    height: 100%;
+    background-color: #f5f6f7;
+    position: relative;
+    overflow-y: scroll;
+    font-family: "PingFang SC","Helvetica","Microsoft YaHei","Arial";
 }
-#sidebar{
-    width: 220px;
-    padding: 10px;
-    background-color: #f36;
-}
-#main{
-    background-color: #e66;
-    padding: 10px;
-    margin: 0 10px;
-    -moz-box-flex:1;
-    -webkit-box-flex:1;
-    box-flex:1;
-    /* 三列布局 */
-    -moz-box-ordinal-group:2;
-    -webkit-box-ordinal-group:2;
-    box-ordinal-group:2;
-    /* 排序 */
-}
+
 .content{
+    background-color: #ffffff;
+    margin: 20px 30px;
+    padding: 20px;
+}
+.content span{
+    font-size: 12px;
+    font-weight: 300;
+    color: #999999;
+}
+
+.content1{
+    margin: 10px 30px;
+    padding:20px;
+    background-color: #ffffff;
+    box-shadow: rgba(0,0,0,.06);
+}
+
+.footer{
+    position: relative;
+    height: 60px;
+    bottom: 0;
     width: 100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -moz-box-flex:1;
-    -webkit-box-flex:1;
-    box-flex:1;
+    background-color: #f5f6f7;
+    text-align: center;
+    padding: 20px;
+    color: #999999;
+    font-size: 14px;
+}
+.content div{
+    position: relative;
+    float: left;
+    width: 300px;
+    height:100px;
+    margin: 10px;
+}
+
+/* sidebar */
+#demo-list a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.sidebar-accordion, .sidebar-accordion * {
+    font-family: "Pingfang", sans-serif;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.sidebar-accordion {
+    width: 200px;
+    float: left;
+    position: relative;
+    font-weight: 300;
+}
+
+.sidebar-accordion .sidebar-accordion-footer, .sidebar-accordion .sidebar-accordion-header {
+    width: 100%;
+    height: 100px;
+    padding: 25px 20px;
+    line-height: 50px;
+    font-weight: 300;
+    color: #f0f0f0;
+    background: #414956;
+}
+
+.sidebar-accordion ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-accordion ul li {
+    width: 100%;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.sidebar-accordion ul li a {
+    width: 100%;
+    padding: 15px 20px;
+    float: left;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 13px;
+    background: #414956;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    transition: color .2s linear, background .2s linear;
+}
+
+.sidebar-accordion>ul>li.active, .sidebar-accordion>ul>li:hover>a {
+    color: #fff;
+    background: #3b424d;
+}
+
+.sidebar-accordion>ul>li>a {
+    border-bottom: solid 1px #3b424d;
+}
+
+.sidebar-accordion ul li a i {
+    width: 34px;
+    float: left;
+    line-height: 18px;
+    font-size: 16px;
+    text-align: left;
+    color: #1BBC9C;
+}
+
+.sidebar-accordion .submenu-indicator {
+    float: right;
+    right: 22px;
+    position: absolute;
+    line-height: 19px;
+    font-size: 14px;
+    color: #AEB2B7;
+    transition: transform .3s linear;
+}
+
+.sidebar-accordion ul ul.submenu .submenu-indicator {
+    line-height: 16px;
+}
+
+.sidebar-accordion .submenu-indicator-minus>.submenu-indicator {
+    transform: rotate(45deg);
+}
+
+.sidebar-accordion ul ul.submenu, .sidebar-accordion ul ul.submenu li ul.submenu {
+    width: 100%;
+    display: none;
+    position: static;
+}
+
+.sidebar-accordion ul ul.submenu li {
+    clear:both;
+    width: 100%;
+}
+
+.sidebar-accordion ul ul.submenu li a {
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    background: #23313f;
+    border-top: none;
+    position: relative;
+    border-left: solid 2px transparent;
+    transition: border .5s linear;
+    font-weight: 100;
+    color: #7E8185;
+}
+
+.sidebar-accordion ul ul.submenu li:hover>a {
+    border-left-color: #414956;
+    color: #f5f6f7;
+}
+.sidebar-accordion ul ul.submenu>li>a {
+    padding-left: 52px;
+}
+
+.ink {
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.3);
+    border-radius: 100%;
+    transform: scale(0);
+}
+
+.animate-ink {
+    animation: ripple .5s linear;
+}
+
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+.red.sidebar-accordion .sidebar-accordion-footer,.red.sidebar-accordion .sidebar-accordion-header,.red.sidebar-accordion ul li a {
+    background: #2A3949
+}
+
+.red.sidebar-accordion>ul>li.active>a,.red.sidebar-accordion>ul>li:hover>a {
+    background: #334353;
+}
+
+.red.sidebar-accordion>ul>li>a {
+    border-bottom-color: #334251;
+}
+
+.red.sidebar-accordion ul ul.submenu li:hover>a {
+    border-left-color: #37B198;
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+.card-wrap{
+    float:left;
+    width:100%;
+    padding:10px 10px;
+    overflow: hidden;
+    width: 25%;
+}
+
+.grid{
+    margin: 10px 30px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.grid:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.card{
+    height:80px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px 1px rgba(153,153,153,.1);
+    padding:10px;
+    font-size: 12px;
+}
+.card a{
+    text-decoration: none;
+    display: inline-block;
+    color: #999999;
+}
+.card a div{
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+    float: left;
+    
+}
+
+h5{
+    line-height: 25px;
+}
+
+p{
+    font-size: 12px;
+    color: #aaaaaa;
+    font-weight: 300;
+}
+.card a div img{
+    width:48px;
+    border-radius: 100%;
+    background-color: #f5f6f7;
 }

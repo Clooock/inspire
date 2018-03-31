@@ -6,23 +6,512 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CLOCK-D</title>
 	<link rel="stylesheet" type="text/css" href="inspire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 </head>
 
 <body>
-<div id="header">
-	CLOCK-D
-</div>
-<div class="content">
-	<div id="main">
-		Main
+<div class="container">
+	<div class="left">
+        <div id="sidebar-accordion" class="sidebar-accordion red">
+            <div class="sidebar-accordion-header">设计师的Web收藏夹</div>
+            <ul id="demo-list">
+                <li><a href="#" class="submenu-indicator-minus"><i class="fa fa-compass"></i>Design </a>
+                    <ul class="submenu" style="display: block;">
+                        <li><a href="#">发现灵感 </a></li>
+                        <li><a href="#">设计体系 </a></li>
+                        <li><a href="#">在线工具 </a></li>
+                        <li><a href="#">交流社区</a></li>
+                        <li><a href="#">博客集合</a></li>
+                        <li><a href="#">设计团队</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-sitemap"></i>Product </a>
+                    <ul class="submenu">
+                        <li><a href="#">产品社区</a></li>
+                        <li><a href="#">个人博客</a></li>
+                        <li><a href="#">学习资源</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-code"></i>Coding </a>
+                    <ul class="submenu">
+                        <li><a href="#">前端框架</a></li>
+                        <li><a href="#">技术社区</a></li>
+                        <li><a href="#">在线工具</a></li>
+                        <li><a href="#">学习资源</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-cube"></i>Others </a></li>
+        </div>
 	</div>
-	<div id="sidebar">
-		Sidebar-left
+	<div class="main">
+		<div class="content"><span>Design | 发现灵感</span></div>
+        <div class="grid">
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <div>
+                            <img src="https://cdn.dribbble.com/assets/apple-touch-icon-precomposed-4a188d3f4dd693b67971fda843fd4bdeae751f9a245e3b878cae17e0a9d6a0a3.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Dribbble</h5>
+                            <p>炫技的地方</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <div>
+                            <img src="https://a5.behance.net/2d454d6f9c712b12f6bd8561c4ed5fa560a800fd/img/site/apple-touch-icon.png?cb=264615658" alt="">
+                        </div>
+                        <div>
+                            <h5>Behance</h5>
+                            <p>设计师的作品集</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.awwwards.com/" target="_blank">
+                        <div>
+                            <img src="https://www.awwwards.com/favicon.ico" alt="">
+                        </div>
+                        <div>
+                            <h5>Awwards</h5>
+                            <p>各种获奖的Web端设计</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.siteinspire.com/" target="_blank">
+                        <div>
+                            <img src="https://www.siteinspire.com/favicon.png" alt="">
+                        </div>
+                        <div>
+                            <h5>SiteInspire</h5>
+                            <p>收集了很多不错的网站</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content"><span>Design | 设计体系</span></div>
+        <div class="grid">
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://atlassian.design/" target="_blank">
+                        <div>
+                            <img src="https://atlassian.design/react_assets/images/cards/logo.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Atlassian</h5>
+                            <p>中台工具为主</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://design.google/resources/" target="_blank">
+                        <div>
+                            <img src="https://design.google/images/GD17_Favicon_192.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Google</h5>
+                            <p>全平台设计指南</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.lightningdesignsystem.com/" target="_blank">
+                        <div>
+                            <img src="https://www.lightningdesignsystem.com/favicons/apple-touch-icon-57x57.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Lightning Design</h5>
+                            <p>SalesForce的设计体系</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://ant.design/index-cn" target="_blank">
+                        <div>
+                            <img src="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Antd</h5>
+                            <p>一套中后台解决方案</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://design.google/resources/" target="_blank">
+                        <div>
+                            <img src="https://design.google/images/GD17_Favicon_192.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Google</h5>
+                            <p>全平台设计指南</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.lightningdesignsystem.com/" target="_blank">
+                        <div>
+                            <img src="https://www.lightningdesignsystem.com/favicons/apple-touch-icon-57x57.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Lightning Design</h5>
+                            <p>SalesForce的设计体系</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://ant.design/index-cn" target="_blank">
+                        <div>
+                            <img src="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Antd</h5>
+                            <p>一套中后台解决方案</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content"><span>Design | 在线工具</span></div>
+        <div class="grid">
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <div>
+                            <img src="https://tinypng.com/images/favicon.ico" alt="">
+                        </div>
+                        <div>
+                            <h5>Tinypng</h5>
+                            <p>图片尺寸浓缩神奇</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <div>
+                            <img src="https://a5.behance.net/2d454d6f9c712b12f6bd8561c4ed5fa560a800fd/img/site/apple-touch-icon.png?cb=264615658" alt="">
+                        </div>
+                        <div>
+                            <h5>Behance</h5>
+                            <p>设计师的作品集</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.awwwards.com/" target="_blank">
+                        <div>
+                            <img src="https://www.awwwards.com/favicon.ico" alt="">
+                        </div>
+                        <div>
+                            <h5>Awwards</h5>
+                            <p>各种获奖的Web端设计</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.siteinspire.com/" target="_blank">
+                        <div>
+                            <img src="https://www.siteinspire.com/favicon.png" alt="">
+                        </div>
+                        <div>
+                            <h5>SiteInspire</h5>
+                            <p>收集了很多不错的网站</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content"><span>Design | 交流社区</span></div>
+        <div class="grid">
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <div>
+                            <img src="https://cdn.dribbble.com/assets/apple-touch-icon-precomposed-4a188d3f4dd693b67971fda843fd4bdeae751f9a245e3b878cae17e0a9d6a0a3.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Dribbble</h5>
+                            <p>炫技的地方</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="http://www.uisdc.com/" target="_blank">
+                        <div>
+                            <img src="https://tva2.sinaimg.cn/crop.0.0.600.600.50/69b7d63ajw8ez1xvtzsdej20go0got9v.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>优设主页</h5>
+                            <p>设计师社区</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="http://ux.stackexchange.com/" target="_blank">
+                        <div>
+                            <img src="https://cdn.sstatic.net/Sites/ux/img/favicon.ico?v=2cad7f528393" alt="">
+                        </div>
+                        <div>
+                            <h5>UX Stack</h5>
+                            <p>设计师的「zhihu」</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="http://www.ui.cn/" target="_blank">
+                        <div>
+                            <img src="http://www.ui.cn/Public/img/favicon.ico" alt="">
+                        </div>
+                        <div>
+                            <h5>UI中国</h5>
+                            <p>炫技的地方</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content"><span>Design | 博客集合</span></div>
+        <div class="grid">
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <div>
+                            <img src="https://cdn.dribbble.com/assets/apple-touch-icon-precomposed-4a188d3f4dd693b67971fda843fd4bdeae751f9a245e3b878cae17e0a9d6a0a3.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Dribbble</h5>
+                            <p>炫技的地方</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <div>
+                            <img src="https://a5.behance.net/2d454d6f9c712b12f6bd8561c4ed5fa560a800fd/img/site/apple-touch-icon.png?cb=264615658" alt="">
+                        </div>
+                        <div>
+                            <h5>Behance</h5>
+                            <p>设计师的作品集</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.awwwards.com/" target="_blank">
+                        <div>
+                            <img src="https://www.awwwards.com/favicon.ico" alt="">
+                        </div>
+                        <div>
+                            <h5>Awwards</h5>
+                            <p>各种获奖的Web端设计</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.siteinspire.com/" target="_blank">
+                        <div>
+                            <img src="https://www.siteinspire.com/favicon.png" alt="">
+                        </div>
+                        <div>
+                            <h5>SiteInspire</h5>
+                            <p>收集了很多不错的网站</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content"><span>Design | 设计团队</span></div>
+        <div class="grid">
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <div>
+                            <img src="https://cdn.dribbble.com/assets/apple-touch-icon-precomposed-4a188d3f4dd693b67971fda843fd4bdeae751f9a245e3b878cae17e0a9d6a0a3.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Dribbble</h5>
+                            <p>炫技的地方</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <div>
+                            <img src="https://a5.behance.net/2d454d6f9c712b12f6bd8561c4ed5fa560a800fd/img/site/apple-touch-icon.png?cb=264615658" alt="">
+                        </div>
+                        <div>
+                            <h5>Behance</h5>
+                            <p>设计师的作品集</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="https://www.awwwards.com/" target="_blank">
+                        <div>
+                            <img src="https://www.awwwards.com/favicon.ico" alt="">
+                        </div>
+                        <div>
+                            <h5>Awwards</h5>
+                            <p>各种获奖的Web端设计</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+		<!--<div class="content1 content11">-->
+            <!--<div class="col">001</div>-->
+            <!--<div class="col">001</div>-->
+            <!--<div class="col">001</div>-->
+            <!--<div class="col">001</div>-->
+            <!--<div class="col">001</div>-->
+            <!--<div class="col">001</div>-->
+        <!--</div>-->
+        <!--<div class="content1">001</div>-->
+		<div class="footer">@ 2018 粥一</div>
 	</div>
-</div>
-<div id="footer">
-	Footer
 </div>
 </body>
-</html>
+    <script type="text/javascript">
+    ;(function($, window, document, undefined) {
+        var pluginName = "jqueryAccordionMenu";
+        var defaults = {
+            speed: 300,
+            showDelay: 0,
+            hideDelay: 0,
+            singleOpen: true,
+            clickEffect: true
+        };
 
+        function Plugin(element, options) {
+            this.element = element;
+            this.settings = $.extend({}, defaults, options);
+            this._defaults = defaults;
+            this._name = pluginName;
+            this.init();
+        }
+
+        $.extend(Plugin.prototype, {
+            init: function() {
+                this.openSubmenu();
+                this.submenuIndicators();
+                if (defaults.clickEffect) {
+                    this.addClickEffect();
+                }
+            },
+            openSubmenu: function() {
+                $(this.element).children('ul').find('li').bind('click touchstart', function(e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    if ($(this).children('.submenu').length > 0) {
+                        if ($(this).children('.submenu').css('display') == 'none') {
+                            $(this).children('.submenu').delay(defaults.showDelay).slideDown(defaults.speed);
+                            $(this).children('.submenu').siblings('a').addClass('submenu-indicator-minus');
+                            if (defaults.singleOpen) {
+                                $(this).siblings().children('.submenu').slideUp(defaults.speed);
+                                $(this).siblings().children('.submenu').siblings('a').removeClass('submenu-indicator-minus');
+                            }
+                            return false;
+                        } else {
+                            $(this).children('.submenu').delay(defaults.hideDelay).slideUp(defaults.speed);
+                        }
+
+                        if ($(this).children('.submenu').siblings('a').hasClass('submenu-indicator-minus')) {
+                            $(this).children('.submenu').siblings('a').removeClass('submenu-indicator-minus');
+                        }
+                    }
+                    window.location.href = $(this).children('a').attr('href');
+                })
+            },
+            submenuIndicators: function() {
+                if ($(this.element).find('.submenu').length > 0) {
+                    $(this.element).find('.submenu').siblings('a').append('<span class="submenu-indicator">+</span>');
+                }
+            },
+            addClickEffect: function() {
+                var ink, d, x, y;
+                $(this.element).find('a').bind('click touchstart', function(e) {
+                    $('.ink').remove();
+                    if ($(this).children('.ink').length === 0) {
+                        $(this).prepend('<span class="ink"></span>');
+                    }
+                    ink = $(this).find('.ink');
+                    ink.removeClass('animate-ink');
+                    if (!ink.height() && !ink.width()) {
+                        d = Math.max($(this).outerWidth(), $(this).outerHeight());
+                        ink.css({
+                            height: d,
+                            width: d
+                        });
+                    }
+                    x = e.pageX - $(this).offset().left - ink.width() / 2;
+                    y = e.pageY - $(this).offset().top - ink.height() / 2;
+                    ink.css({
+                        top: y + 'px',
+                        left: x + 'px'
+                    }).addClass('animate-ink');
+                })
+            }
+        });
+        $.fn[pluginName] = function(options) {
+            this.each(function() {
+                if (!$.data(this, 'plugin_' + pluginName)) {
+                    $.data(this, 'plugin_' + pluginName, new Plugin(this, options));
+                }
+            });
+            return this;
+        }
+    })(jQuery, window, document);
+
+    jQuery('#sidebar-accordion').jqueryAccordionMenu();
+</script>
+</html>
