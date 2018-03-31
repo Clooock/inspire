@@ -1,2 +1,1 @@
-# inspire
-A collection of page for designers
+A collection of website for designers
