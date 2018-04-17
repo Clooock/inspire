@@ -6,16 +6,6 @@
     font-style: normal;
 }
 
-.fa {
-    display: inline-block;
-    font-family: FontAwesome2 !important;
-    font-style: normal;
-    font-weight: thin;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -25,68 +15,18 @@
 }
 html,body{
     height: 100%;
-    min-width: 1300px;
+    background-color: #f5f6f7;
+    /*min-width: 1300px;*/
 }
-.container{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-}
+/*----------------sidebar-----------------*/
 .left{
     width: 200px;
     height: 100%;
     background-color: #2a3949;
-    position: absolute;
+    position:fixed;
     color: #ffffff;
 }
-.main{
-    margin-left: 200px;
-    height: 100%;
-    background-color: #f5f6f7;
-    position: relative;
-    overflow-y: scroll;
-    font-family: "PingFang SC","Helvetica","Microsoft YaHei","Arial";
-}
 
-.content{
-    background-color: #ffffff;
-    margin: 20px 30px;
-    padding: 20px;
-}
-.content span{
-    font-size: 12px;
-    font-weight: 300;
-    color: #999999;
-}
-
-.content1{
-    margin: 10px 30px;
-    padding:20px;
-    background-color: #ffffff;
-    box-shadow: rgba(0,0,0,.06);
-}
-
-.footer{
-    position: relative;
-    height: 60px;
-    bottom: 0;
-    width: 100%;
-    background-color: #f5f6f7;
-    text-align: center;
-    padding: 20px;
-    color: #999999;
-    font-size: 14px;
-}
-.content div{
-    position: relative;
-    float: left;
-    width: 300px;
-    height:100px;
-    margin: 10px;
-}
-
-/* sidebar */
 #demo-list a {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -247,21 +187,65 @@ html,body{
     border-left-color: #37B198;
 }
 
-@media screen and (min-width: 1024px) {
+
+/*---------------content area-----------------*/
+.main-wrap{
+    margin-left: 200px;
+    height: 100%;
+    position: relative;
+    font-family: "PingFang SC","Helvetica","Microsoft YaHei","Arial";
+}
+
+.main{
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+
+
+
+.content{
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+.content span{
+    font-size: 12px;
+    font-weight: 300;
+    color: #999999;
+}
+
+.content div{
+    position: relative;
+    float: left;
+    width: 300px;
+    height:100px;
+    margin: 10px;
+}
+
+
+.footer{
+    position: relative;
+    height: 60px;
+    bottom: 0;
+    background-color: #f5f6f7;
+    text-align: center;
+    padding: 20px;
+    color: #999999;
+    font-size: 14px;
 }
 
 .card-wrap{
     float:left;
-    width:100%;
-    padding:10px 10px;
+    padding:10px;
     overflow: hidden;
-    width: 25%;
+    width: 300px;
 }
 
 .grid{
-    margin: 10px 30px;
-    margin-bottom: 40px;
     display: block;
+    padding-bottom: 20px;
 }
 
 .grid:after {
@@ -271,12 +255,13 @@ html,body{
 }
 
 .card{
-    height:80px;
+    height:100%;
+    width: 100%;
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 1px 1px 10px 1px rgba(153,153,153,.1);
-    padding:10px;
     font-size: 12px;
+    padding: 10px;
 }
 .card a{
     text-decoration: none;
@@ -288,8 +273,73 @@ html,body{
     padding: 5px 10px;
     position: relative;
     float: left;
-    
+
 }
+
+.card a div img{
+    width:56px;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+
+
+@media screen and (min-width:400px){
+    .main{
+        width: 100%;
+    }
+    .grid{
+        margin: 0;
+    }
+    .card-wrap{
+        width: 100%;
+        height: 118px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .main{
+        width: 760px;
+    }
+    .grid{
+        margin: 0;
+    }
+    .card-wrap{
+        width: 380px;
+        height: 118px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .main{
+        width: 930px;
+    }
+    .grid{
+        margin: 0;
+    }
+    .card-wrap{
+        width: 310px;
+        height: 118px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .main{
+        width: 1280px;
+    }
+    .grid{
+        margin: 0;
+    }
+    .card-wrap{
+        width: 320px;
+        height: 118px;
+        margin: 0;
+    }
+}
+
+/*------------all------------*/
 
 h5{
     line-height: 25px;
@@ -300,8 +350,15 @@ p{
     color: #aaaaaa;
     font-weight: 300;
 }
-.card a div img{
-    width:48px;
-    border-radius: 100%;
-    background-color: #f5f6f7;
+
+/*-----------icon-------------*/
+.fa {
+    display: inline-block;
+    font-family: FontAwesome2 !important;
+    font-style: normal;
+    font-weight: thin;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
